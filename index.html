@@ -2,30 +2,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>KiroPlace</title>
+  <title>KiroPlace Canvas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>KiroPlace</h1>
+  <h1>KiroPlace Canvas</h1>
   <div>
     <label>Elige color: </label>
     <input type="color" id="colorPicker" value="#ff0000">
     <button id="eraser">Borrador</button>
   </div>
-  <div id="board"></div>
+  <canvas id="board"></canvas>
 
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 
   <script>
     const firebaseConfig = {
-    //   apiKey: "TU_API_KEY",
-    //   authDomain: "TU_PROYECTO.firebaseapp.com",
-      databaseURL: "https://kiroplace-default-rtdb.firebaseio.com",
-    //   projectId: "TU_PROYECTO",
-    //   storageBucket: "TU_PROYECTO.appspot.com",
-    //   messagingSenderId: "TU_ID",
-    //   appId: "TU_APP_ID"
+      databaseURL: "https://kiroplace-default-rtdb.firebaseio.com"
     };
     firebase.initializeApp(firebaseConfig);
     const database = firebase.database();
@@ -34,5 +28,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-

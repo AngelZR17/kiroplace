@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const board = document.getElementById("board");
   const colorPicker = document.getElementById("colorPicker");
   const eraserBtn = document.getElementById("eraser");
-  const size = 64;
+  const size = 32;
 
   let currentColor = colorPicker.value;
   let erasing = false;
@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 
 
 
